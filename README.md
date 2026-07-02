@@ -176,10 +176,7 @@ All numerical variables are standardized using statistics estimated from the cor
 The main composition-temperature distance is
 
 $$
-d_{\mathrm{main}}^2(x_i,x_j)
-=
-\sum_{m=1}^{M}
-w_m\left(z_{i,m}-z_{j,m}\right)^2,
+d_{\mathrm{main}}^2(x_i,x_j)=\sum_{m=1}^{M}w_m\left(z_{i,m}-z_{j,m}\right)^2,
 $$
 
 where:
