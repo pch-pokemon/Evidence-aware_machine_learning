@@ -142,11 +142,7 @@ For temporal analysis:
 For a test sample $x_i$ and a training sample $x_j$, the terminal-leaf distance is defined as
 
 $$
-d_{\mathrm{leaf}}(x_i,x_j)
-=
-\frac{1}{T}
-\sum_{t=1}^{T}
-\mathbb{I}\!\left(l_{i,t}\neq l_{j,t}\right),
+d_{\mathrm{leaf}}(x_i,x_j)=\frac{1}{T}\sum_{t=1}^{T}\mathbb{I}\!\left(l_{i,t}\neq l_{j,t}\right),
 $$
 
 where:
@@ -158,11 +154,7 @@ where:
 The model evidence distance of test sample $i$ is
 
 $$
-\mathrm{MED}_i
-=
-\frac{1}{k}
-\sum_{j\in \mathcal{N}^{\mathrm{leaf}}_i}
-d_{\mathrm{leaf}}(x_i,x_j),
+\mathrm{MED}_i=\frac{1}{k}\sum_{j\in \mathcal{N}^{\mathrm{leaf}}_i}d_{\mathrm{leaf}}(x_i,x_j),
 $$
 
 where $\mathcal{N}^{\mathrm{leaf}}_i$ denotes the set of the $k$ nearest training samples in terminal-leaf space.
@@ -196,15 +188,7 @@ and accounts for differences in heat-treatment temperature, duration, and treatm
 The combined pairwise physical distance is
 
 $$
-d_{\mathrm{phys}}(x_i,x_j)
-=
-\sqrt{
-(1-\lambda_{\mathrm{HT}})
-\,d_{\mathrm{main}}^2(x_i,x_j)
-+
-\lambda_{\mathrm{HT}}
-\,d_{\mathrm{HT}}^2(x_i,x_j)
-},
+d_{\mathrm{phys}}(x_i,x_j)=\sqrt{(1-\lambda_{\mathrm{HT}})\,d_{\mathrm{main}}^2(x_i,x_j)+\lambda_{\mathrm{HT}}\,d_{\mathrm{HT}}^2(x_i,x_j)},
 $$
 
 where $\lambda_{\mathrm{HT}}$ controls the relative contribution of heat-treatment information.
@@ -212,11 +196,7 @@ where $\lambda_{\mathrm{HT}}$ controls the relative contribution of heat-treatme
 The physical evidence distance of test sample $i$ is
 
 $$
-\mathrm{PED}_i
-=
-\frac{1}{k}
-\sum_{j\in \mathcal{N}^{\mathrm{phys}}_i}
-d_{\mathrm{phys}}(x_i,x_j),
+\mathrm{PED}_i=\frac{1}{k}\sum_{j\in \mathcal{N}^{\mathrm{phys}}_i}d_{\mathrm{phys}}(x_i,x_j),
 $$
 
 where $\mathcal{N}^{\mathrm{phys}}_i$ denotes the set of the $k$ nearest training samples in physical evidence space.
