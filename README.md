@@ -365,7 +365,7 @@ $$
 - $l_{i,t}$ 表示样本 $i$ 在第 $t$ 棵树中被分配到的终端叶节点；
 - $\mathbb{I}(\cdot)$ 为指示函数，当条件成立时取值为1，否则取值为0。
 
-测试样本$i$的模型证据距离定义为：
+测试样本 $i$ 的模型证据距离定义为：
 
 $$
 \mathrm{MED}_i=\frac{1}{k}\sum_{j\in \mathcal{N}^{\mathrm{leaf}}_i}d_{\mathrm{leaf}}(x_i,x_j),
