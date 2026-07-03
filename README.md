@@ -213,7 +213,7 @@ For each test sample, local evidence statistics are extracted from its $k$ neare
 - publication-year range of the neighboring evidence, when available.
 
 These statistics characterize local evidence diversity, consistency, and proximity. They are complementary to MED and PED and are useful for case-level provenance analysis.
-——————————————————————————————————————————
+
 # 高温合金氧化动力学的证据感知机器学习
 
 ## 项目概述
@@ -371,7 +371,7 @@ $$
 \mathrm{MED}_i=\frac{1}{k}\sum_{j\in \mathcal{N}^{\mathrm{leaf}}_i}d_{\mathrm{leaf}}(x_i,x_j),
 $$
 
-其中，$\mathcal{N}^{\mathrm{leaf}}_i$ 表示终端叶节点空间中距离测试样本 $i$ 最近的 $k$ 个训练样本集合。
+其中， $\mathcal{N}^{\mathrm{leaf}}_i$ 表示终端叶节点空间中距离测试样本 $i$ 最近的 $k$ 个训练样本集合。
 
 较低的MED表示测试样本位于与训练数据所占据区域相似的模型表征区域中。较高的MED表示模型空间外推程度逐渐增加。
 
@@ -387,7 +387,7 @@ $$
 
 其中：
 
-- $z_{i,m}$ 和 $z_{j,m}$ 分别为样本 $i$ 和样本 $j$ 在物理变量$m$上的标准化数值；
+- $z_{i,m}$ 和 $z_{j,m}$ 分别为样本 $i$ 和样本 $j$ 在物理变量 $m$ 上的标准化数值；
 - $w_m$ 为分配给物理变量$m$的归一化权重；
 - $M$ 为合金成分变量和氧化温度变量的总数。
 
@@ -421,7 +421,7 @@ $$
 
 ## 局部证据统计量
 
-对于每个测试样本，从其物理空间中最近的$k$个训练样本中提取局部证据统计量：
+对于每个测试样本，从其物理空间中最近的 $k$ 个训练样本中提取局部证据统计量：
 
 - `n_sources`：邻近样本中不同文献来源的数量；
 - `lgkp_std`：邻近样本`lgkp`值的标准差；
