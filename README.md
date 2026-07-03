@@ -405,7 +405,7 @@ $$
 d_{\mathrm{phys}}(x_i,x_j)=\sqrt{(1-\lambda_{\mathrm{HT}})\,d_{\mathrm{main}}^2(x_i,x_j)+\lambda_{\mathrm{HT}}\,d_{\mathrm{HT}}^2(x_i,x_j)},
 $$
 
-其中，$\lambda_{\mathrm{HT}}$ 控制热处理信息在总物理距离中的相对贡献。
+其中， $\lambda_{\mathrm{HT}}$ 控制热处理信息在总物理距离中的相对贡献。
 
 测试样本 $i$ 的物理证据距离定义为：
 
@@ -413,7 +413,7 @@ $$
 \mathrm{PED}_i=\frac{1}{k}\sum_{j\in \mathcal{N}^{\mathrm{phys}}_i}d_{\mathrm{phys}}(x_i,x_j),
 $$
 
-其中，$\mathcal{N}^{\mathrm{phys}}_i$ 表示物理证据空间中距离测试样本 $i$ 最近的 $k$ 个训练样本集合。
+其中， $\mathcal{N}^{\mathrm{phys}}_i$ 表示物理证据空间中距离测试样本 $i$ 最近的 $k$ 个训练样本集合。
 
 较低的PED表示存在较密集的、在成分和实验条件方面相似的训练样本支持。较高的PED表示物理证据较弱，或者测试样本超出了现有实验数据所覆盖的范围。
 
