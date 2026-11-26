@@ -1,0 +1,20 @@
+{
+  "method": "Nested 5x4 GroupKFold (source_key), Optuna inside outer training folds only",
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "requested_optuna_trials_per_outer_fold": 100,
+  "optuna_objective": "mean of inner-fold R2 (unweighted)",
+  "random_state_model": 42,
+  "seed_optuna_per_fold": "42 + outer_fold",
+  "search_space": {
+    "max_depth": "int[4,50]",
+    "learning_rate": "log_uniform[0.0001,0.01]",
+    "n_estimators": "int[100,1000]",
+    "min_child_weight": "uniform[2.0,10.0]",
+    "subsample": "uniform[0.1,1.0]",
+    "colsample_bytree": "uniform[0.1,1.0]",
+    "gamma": "uniform[0.1,1.0]",
+    "reg_alpha": "uniform[0.1,1.0]",
+    "reg_lambda": "uniform[0.1,1.0]"
+  }
+}

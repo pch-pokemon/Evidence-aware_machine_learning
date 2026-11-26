@@ -1,0 +1,51 @@
+{
+  "n_oof_records": 613,
+  "n_heldout_sources": 163,
+  "pooled_OOF": {
+    "R2": 0.7019383335260805,
+    "MAE": 0.5883566445823338,
+    "RMSE": 0.7653750253794044
+  },
+  "mean_fold": {
+    "R2": 0.6959724291177325,
+    "MAE": 0.5883011615699207,
+    "RMSE": 0.7570433378494068
+  },
+  "sd_fold": {
+    "R2": 0.04695252165974899,
+    "MAE": 0.10097633575159083,
+    "RMSE": 0.12475161041382583
+  },
+  "Q_state_counts_P50": {
+    "Q1": 65,
+    "Q2": 58,
+    "Q3": 64,
+    "Q4": 426
+  },
+  "nested_frozen_prediction_reproduction": {
+    "n_compared": 613,
+    "max_abs_y_true_diff": 0.0,
+    "max_abs_prediction_diff": 1.7763568394002505e-15
+  },
+  "nested_evidence_diagnostic_reproduction": {
+    "n_compared": 613,
+    "n_fold_mismatches": 0,
+    "max_abs_diff_y_true": 0.0,
+    "max_abs_diff_prediction": 1.7763568394002505e-15,
+    "max_abs_diff_MED": 1.1102230246251565e-16,
+    "max_abs_diff_PED_log1p": 4.440892098500626e-16,
+    "max_abs_diff_MED_P50": 5.551115123125783e-17,
+    "max_abs_diff_PED_P50": 5.551115123125783e-17,
+    "max_abs_diff_D_LEAF": 1.1102230246251565e-16,
+    "max_abs_diff_D_SUPPORT": 1.1102230246251565e-16,
+    "max_abs_diff_MED_margin": 9.94484442712329e-17,
+    "max_abs_diff_PED_margin": 2.220446049250313e-16,
+    "mismatched_primary_states": 0,
+    "mismatched_P40_states": 0,
+    "mismatched_P45_states": 0,
+    "mismatched_P50_states": 0,
+    "mismatched_P55_states": 0,
+    "mismatched_P60_states": 0
+  },
+  "med_calibration_note": "fitted-model training-reference LOO, not cross-fitted or probabilistically calibrated"
+}

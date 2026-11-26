@@ -1,0 +1,90 @@
+{
+  "purpose": "final full-data deployment model for prospective screening",
+  "n_records": 613,
+  "n_sources": 163,
+  "feature_cols": [
+    "solu_temp",
+    "solu_time",
+    "middle_temp",
+    "middle_time",
+    "aging_temp",
+    "aging_time",
+    "x_Co",
+    "x_Al",
+    "x_W",
+    "x_Ni",
+    "x_Cr",
+    "x_Mo",
+    "x_Fe",
+    "x_Nb",
+    "x_C",
+    "x_Hf",
+    "x_Si",
+    "x_Ta",
+    "x_Ti",
+    "x_Y",
+    "x_V",
+    "x_B",
+    "x_Zr",
+    "x_Mn",
+    "x_Sc",
+    "x_La",
+    "x_Re",
+    "Temperature",
+    "E_Time",
+    "has_solu",
+    "has_middle",
+    "has_aging"
+  ],
+  "target_col": "lgkp",
+  "model_params": {
+    "objective": "reg:squarederror",
+    "eval_metric": "rmse",
+    "booster": "gbtree",
+    "tree_method": "hist",
+    "random_state": 42,
+    "max_depth": 21,
+    "learning_rate": 0.008415439314132103,
+    "n_estimators": 611,
+    "min_child_weight": 6.153704133303529,
+    "subsample": 0.48686649980860575,
+    "colsample_bytree": 0.9806107605847261,
+    "gamma": 0.8915669032530871,
+    "reg_alpha": 0.3622704403067935,
+    "reg_lambda": 0.9077583890422354,
+    "n_jobs": 8
+  },
+  "hyperparameter_source": "globally optimized source-aware five-fold Optuna parameter set; no new full-data optimization performed",
+  "dataset_reconstruction": "concatenation of the five mutually exclusive source-aware held-out folds",
+  "in_sample_diagnostic_metrics": {
+    "R2": 0.9111004664636746,
+    "MAE": 0.31429057553724965,
+    "RMSE": 0.4179948830294734
+  },
+  "pooled_source_aware_oof_metrics": {
+    "n_oof": 613,
+    "fold_test_sizes": {
+      "1": 123,
+      "2": 123,
+      "3": 123,
+      "4": 122,
+      "5": 122
+    },
+    "pooled_metrics": {
+      "R2": 0.7095197101154269,
+      "MAE": 0.5796935476651256,
+      "RMSE": 0.7555784430933548
+    },
+    "mean_fold_metrics": {
+      "R2_mean": 0.7046233768477478,
+      "R2_std": 0.04943838370650217,
+      "MAE_mean": 0.5796663148383251,
+      "MAE_std": 0.10804036555717884,
+      "RMSE_mean": 0.7465124270749802,
+      "RMSE_std": 0.1295017240493136
+    }
+  },
+  "interpretation_note": "In-sample metrics are diagnostics only. Generalization performance is reported from pooled source-aware five-fold OOF evaluation.",
+  "model_path": "models\\xgb_full_data\\xgb_full_data.joblib",
+  "full_dataset_path": "models\\xgb_full_data\\full_dataset.csv"
+}

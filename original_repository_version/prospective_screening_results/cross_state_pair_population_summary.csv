@@ -1,0 +1,2 @@
+﻿contrast,pair_count,unique_candidates_total,delta_lgkp_min,delta_lgkp_median,delta_lgkp_mean,delta_lgkp_max,composition_distance_median,pair_boundary_margin_median,evidence_separation_median
+Q1-Q3,2270,241,0.0001583099365234375,0.04338550567626953,0.04659854872111182,0.09997749328613281,0.348010216963685,0.02843741962885478,0.15686168037820053

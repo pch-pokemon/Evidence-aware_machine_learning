@@ -1,0 +1,18 @@
+{
+  "method": "Nested random 5 outer KFold x 4 inner shuffled KFold; record-level splits",
+  "inner_splits": "KFold(n_splits=inner_folds, shuffle=True, random_state=42+outer_fold)",
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "optuna_objective": "mean inner-fold R2 (unweighted)",
+  "search_space": {
+    "max_depth": "int[4,50]",
+    "learning_rate": "log_uniform[0.0001,0.01]",
+    "n_estimators": "int[100,1000]",
+    "min_child_weight": "uniform[2.0,10.0]",
+    "subsample": "uniform[0.1,1.0]",
+    "colsample_bytree": "uniform[0.1,1.0]",
+    "gamma": "uniform[0.1,1.0]",
+    "reg_alpha": "uniform[0.1,1.0]",
+    "reg_lambda": "uniform[0.1,1.0]"
+  }
+}

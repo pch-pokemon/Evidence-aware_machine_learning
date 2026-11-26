@@ -1,0 +1,15 @@
+{
+  "year_cutoff": 2022,
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "data_dir": "splits\\source_kfold",
+  "current_model_dir": "models\\xgb_source_kfold",
+  "output_dir": "models\\xgb_source_kfold_temporal_2022",
+  "hyperparameter_rule": "Reuse the globally optimized current source-aware XGBoost hyperparameters; do not rerun Optuna on the historical subset.",
+  "test_set_rule": "Use the same held-out source-aware test set in each fold; only the training pool is truncated to Year <= 2022."
+}

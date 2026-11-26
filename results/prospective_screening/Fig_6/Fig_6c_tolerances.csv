@@ -1,0 +1,4 @@
+﻿contrast,delta_lgkp_tolerance,pair_count,unique_candidate_A,unique_candidate_B,unique_candidates_total
+Q1-Q4,0.02,786,62,114,176
+Q1-Q4,0.05,2023,70,142,212
+Q1-Q4,0.1,3959,70,163,233

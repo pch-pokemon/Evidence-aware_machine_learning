@@ -1,0 +1,4 @@
+﻿comparison,n_retained,difference_in_MAE,bootstrap_CI95_low,bootstrap_CI95_high,valid_draws,interpretation
+MED_only minus Joint_MED_PED,65,0.07077084278457546,-0.022528293285698286,0.16123796315682468,1000,Positive = lower MAE for joint; conditional bootstrap
+PED_only minus Joint_MED_PED,65,0.11257300453423869,-0.04547423065703931,0.28702409070996865,1000,Positive = lower MAE for joint; conditional bootstrap
+Euclidean_kNN minus Joint_MED_PED,65,0.11168890529202641,-0.045779588540127904,0.26854678404916105,1000,Positive = lower MAE for joint; conditional bootstrap

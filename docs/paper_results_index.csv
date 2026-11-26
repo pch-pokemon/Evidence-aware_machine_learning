@@ -1,0 +1,41 @@
+﻿manuscript_item,released_data,script,scope
+Fig. 1,,,Manuscript schematic
+Fig. 2(a),,,Original plotted record list and documented window require author reconciliation
+Fig. 2(b),results/nested_cv/Table_1.csv,,Nested per-fold comparison
+Fig. 3(a–b),results/nested_cv/pooled_oof_metrics.json,code/nested_cv/compute_oof_evidence.py,Aggregate values are released; individual plotted targets and residuals require controlled inputs
+Fig. 3(c),results/nested_cv/source/OOF_evidence.csv,code/verify_published_evidence.py,Evidence coordinates are released; individual error coloring requires controlled inputs
+Fig. 3(d),results/nested_cv/Table_2.csv,code/figures/plot_evidence_error_distributions.py,Distribution rendering requires controlled residuals
+Fig. 4(a–b),results/temporal_evolution/Cr_Al_evidence_map.csv,code/temporal_evolution/plot_spatial_and_temporal_evidence.py,Bin statistics: results/temporal_evolution/Fig4b_bin_statistics.csv
+Fig. 5(a–b),results/temporal_evolution/Cr_Al_evidence_map.csv,code/temporal_evolution/plot_spatial_and_temporal_evidence.py,Historical and current Cr–Al state coordinates
+Fig. 5(c),results/temporal_evolution/transition_matrix_counts.csv,code/verify_published_evidence.py,Historical-to-current counts
+Fig. 5(d),results/temporal_evolution/Fig_5d_cases.csv,code/temporal_evolution/plot_temporal_cases.py,Paper cases s279 and s125
+Fig. 6(a),results/prospective_screening/Fig_6/Fig_6a_evidence_state_map.csv,code/figures/plot_prospective_screening.py,Deployment P50 state map
+Fig. 6(b),results/prospective_screening/Fig_6/Fig_6b_predicted_lgkp_map.csv,code/figures/plot_prospective_screening.py,Deployment prediction map
+Fig. 6(c),results/prospective_screening/Fig_6/Fig_6c_matched_pairs.csv,code/figures/plot_prospective_screening.py,Threshold annotations: results/prospective_screening/Fig_6/Fig_6c_tolerances.csv
+Fig. 6(d),results/prospective_screening/Fig_6/Fig_6d_representative_pair.csv,code/figures/plot_prospective_screening.py,Representative pair with signed P50 margins
+Table 1,results/nested_cv/Table_1.csv,code/nested_cv/train_source_aware_xgboost.py,Random and source-aware per-fold metrics
+Table 2,results/nested_cv/Table_2.csv,code/sensitivity_and_ablation/evaluate_med_calibration.py,Sample SD of absolute error; source-cluster bootstrap CIs
+Table 3,results/prospective_screening/Table_3.csv,code/verify_published_evidence.py,Mean signed differences from the deployment P50 thresholds
+Fig. S1,results/dataset/Fig_S1_yearly_statistics.csv,,Yearly counts from the provenance manifest
+Fig. S2,results/temporal_evolution/temporal_fold_metrics.csv,code/temporal_evolution/fit_historical_fold_models.py,Fold metrics are released; plotted measured targets require controlled inputs
+Fig. S3,results/temporal_evolution/SFig_historical_Q1_fraction_bin_statistics.csv,code/temporal_evolution/plot_spatial_and_temporal_evidence.py,Historical Cr–Al bins
+Table S1,results/dataset/Table_S1_modeled_ranges.csv,,Computed modeled ranges; heat-treatment entries exclude absent-stage zeros
+Table S2,results/nested_cv/benchmark/Table_S2_nested.csv,code/nested_cv/train_source_aware_xgboost.py,Nested source-aware outer-fold settings
+Table S3,results/nested_cv/benchmark/Table_S3_nested.csv,code/nested_cv/benchmark_regression_models.py,Pooled OOF comparison of five baselines and XGBoost
+Table S4,results/nested_cv/threshold_sensitivity_quadrant_stats.csv,code/nested_cv/compute_oof_evidence.py,Fold threshold medians are in fold_threshold_summary_NOT_FOR_ASSIGNMENT.csv
+Table S5A,results/sensitivity_and_ablation/PED_lambda_sensitivity.csv,code/sensitivity_and_ablation/evaluate_evidence_weights.py,Protocol weight sensitivity
+Table S5B,results/sensitivity_and_ablation/MED_alpha_sensitivity.csv,code/sensitivity_and_ablation/evaluate_evidence_weights.py,MED mixing sensitivity
+Table S5C,results/sensitivity_and_ablation/k_sensitivity_summary.csv,code/sensitivity_and_ablation/evaluate_neighborhood_ablation.py,Separate and joint neighborhood sensitivity
+Table S6,results/sensitivity_and_ablation/calibration_scenario_summary.csv,code/sensitivity_and_ablation/evaluate_med_calibration.py,Intervals in bootstrap_source_cluster_CI.csv
+Table S7A,results/sensitivity_and_ablation/ablation_P50_and_Q_states.csv,code/sensitivity_and_ablation/evaluate_neighborhood_ablation.py,State-level ablation
+Table S7B,results/sensitivity_and_ablation/ablation_matched_Q1count_bootstrap.csv,code/sensitivity_and_ablation/evaluate_neighborhood_ablation.py,Matched coverage ablation
+Table S8A,results/sensitivity_and_ablation/Table_B_alloy_families.csv,code/sensitivity_and_ablation/summarize_q4_coverage.py,Ni- and Co-dominant family statistics
+Table S8B,results/sensitivity_and_ablation/Table_C_CrAl_bins.csv,code/sensitivity_and_ablation/summarize_q4_coverage.py,Cr–Al bin statistics
+Table S9,results/temporal_evolution/temporal_fold_metrics.csv,code/temporal_evolution/fit_historical_fold_models.py,Five historical folds
+Table S10,results/temporal_evolution/Table_S10.csv,code/temporal_evolution/plot_temporal_cases.py,"Physical-space neighbors for both periods with all modeled predictors, 40 rows"
+Table S11a,results/prospective_screening/Table_S11a_model_space.csv,code/prospective_screening/compute_candidate_evidence.py,"Model-space neighbors with all modeled predictors, 20 rows"
+Table S11b,results/prospective_screening/Table_S11b_physical_space.csv,code/prospective_screening/compute_candidate_evidence.py,"Physical-space neighbors with all modeled predictors, 20 rows"
+Table S12,results/chronological_validation/Table_S12.csv,code/chronological_validation/validate_chronological_holdout.py,All-record interval from the 100% coverage source-cluster calculation
+Kinetic fitting-quality sensitivity,results/sensitivity_and_ablation/kinetic_fitting_quality/subset_overview.csv,code/sensitivity_and_ablation/evaluate_fitting_quality.py,Fitting-metadata subset results; see the input provenance note
+"Chronological stratified comparison",results/chronological_validation/predicted_lgkp_adjusted_gaps.csv,code/chronological_validation/analyze_chronological_error.py,Prediction and alloy-family stratification
+"Chronological matched-budget comparison",results/chronological_validation/screening_summary.csv,code/chronological_validation/validate_chronological_holdout.py,Prospective application diagnostic

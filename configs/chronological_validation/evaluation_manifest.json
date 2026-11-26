@@ -1,0 +1,17 @@
+{
+  "cutoff_inclusive": "2022-12-31",
+  "future_outcomes_sha256": "a2ce498d53818504aaa96e6b5757f889e630841c3d01d2fd89c72b53ce0f0d2b",
+  "screening_policy": {
+    "prediction_tolerance": 0.1,
+    "selection_fraction": 0.25,
+    "min_pool_records": 5,
+    "min_pool_sources": 3
+  },
+  "swap_order": "Ascending predicted lgkp and sample_id, one-to-one",
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 42,
+  "screening_difference": "Prediction-only minus evidence-aware",
+  "screening_pooling": "Within-group differences weighted by the observed group budget",
+  "bootstrap": "Paired source resampling conditional on frozen models and selections",
+  "bootstrap_CI_reporting": "At least three informative sources and half of draws valid"
+}

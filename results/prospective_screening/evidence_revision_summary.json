@@ -1,0 +1,121 @@
+{
+  "reference_records": 613,
+  "reference_sources": 163,
+  "candidates": 651,
+  "protocol_weights": {
+    "solu_temp": {
+      "old": 0.11672320155395395,
+      "new": 0.12089356540818749
+    },
+    "solu_time": {
+      "old": 0.21760344591118075,
+      "new": 0.23174179092293654
+    },
+    "middle_temp": {
+      "old": 0.12289435904695636,
+      "new": 0.13663506394370875
+    },
+    "middle_time": {
+      "old": 0.09627464536259431,
+      "new": 0.0707661406565598
+    },
+    "aging_temp": {
+      "old": 0.10396990399302888,
+      "new": 0.11075297398042869
+    },
+    "aging_time": {
+      "old": 0.14696395044364324,
+      "new": 0.13547513729717628
+    },
+    "E_Time": {
+      "old": 0.19557049368864257,
+      "new": 0.1937353277910025
+    }
+  },
+  "thresholds": [
+    {
+      "percentile": 40,
+      "MED_threshold_old": 0.3178072894241818,
+      "PED_threshold_old": 0.32025873654789955,
+      "MED_threshold_new": 0.3178072894241818,
+      "PED_threshold_new": 0.32052096721089296
+    },
+    {
+      "percentile": 45,
+      "MED_threshold_old": 0.3311673020464705,
+      "PED_threshold_old": 0.33518401765825195,
+      "MED_threshold_new": 0.3311673020464705,
+      "PED_threshold_new": 0.33580906209277295
+    },
+    {
+      "percentile": 50,
+      "MED_threshold_old": 0.34759333895279004,
+      "PED_threshold_old": 0.35129616718241363,
+      "MED_threshold_new": 0.34759333895279004,
+      "PED_threshold_new": 0.35121610432864847
+    },
+    {
+      "percentile": 55,
+      "MED_threshold_old": 0.36867552124812675,
+      "PED_threshold_old": 0.3638452168128058,
+      "MED_threshold_new": 0.36867552124812675,
+      "PED_threshold_new": 0.3637096543080231
+    },
+    {
+      "percentile": 60,
+      "MED_threshold_old": 0.3858833559784235,
+      "PED_threshold_old": 0.38118781401012036,
+      "MED_threshold_new": 0.3858833559784235,
+      "PED_threshold_new": 0.38105280509348316
+    }
+  ],
+  "max_abs_candidate_delta": {
+    "MED": 0.0,
+    "PED_raw": 0.001127537402753176,
+    "PED_log1p": 0.0008059754498248028
+  },
+  "state_transitions": {
+    "Q1": {
+      "Q1": 70,
+      "Q2": 1,
+      "Q3": 0,
+      "Q4": 0
+    },
+    "Q2": {
+      "Q1": 0,
+      "Q2": 30,
+      "Q3": 0,
+      "Q4": 0
+    },
+    "Q3": {
+      "Q1": 0,
+      "Q2": 0,
+      "Q3": 126,
+      "Q4": 1
+    },
+    "Q4": {
+      "Q1": 0,
+      "Q2": 0,
+      "Q3": 0,
+      "Q4": 423
+    }
+  },
+  "matched_pair_counts": [
+    {
+      "tolerance": 0.02,
+      "old_count": 826,
+      "new_count": 786
+    },
+    {
+      "tolerance": 0.05,
+      "old_count": 2115,
+      "new_count": 2023
+    },
+    {
+      "tolerance": 0.1,
+      "old_count": 4067,
+      "new_count": 3959
+    }
+  ],
+  "physical_top10_membership_changed": 56
+}

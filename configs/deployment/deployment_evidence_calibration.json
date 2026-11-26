@@ -1,0 +1,95 @@
+{
+  "reference_records": 613,
+  "reference_sources": 163,
+  "candidate_count": 651,
+  "evidence_config": {
+    "topk": 10,
+    "lambda_protocol": 0.15,
+    "ht_route_mismatch_penalty": 1.0,
+    "ped_threshold_scale": "log1p",
+    "clip_training_reference_normalization": true
+  },
+  "main_weights": {
+    "x_Co": 0.02072274674630244,
+    "x_Al": 0.05348601346962426,
+    "x_W": 0.03686558240420362,
+    "x_Ni": 0.02072274674630244,
+    "x_Cr": 0.043081779339195,
+    "x_Mo": 0.03503450702538559,
+    "x_Fe": 0.03666915980195456,
+    "x_Nb": 0.04322032249121382,
+    "x_C": 0.03796365665716569,
+    "x_Hf": 0.05455931271553418,
+    "x_Si": 0.04794973460896496,
+    "x_Ta": 0.04509686793597482,
+    "x_Ti": 0.048989869252729336,
+    "x_Y": 0.059207847846578406,
+    "x_V": 0.0388744362309968,
+    "x_B": 0.04644420173008681,
+    "x_Zr": 0.05376328572403604,
+    "x_Mn": 0.04280904096685856,
+    "x_Sc": 0.059180239825673484,
+    "x_La": 0.056942952788062516,
+    "x_Re": 0.029603923923289203,
+    "Temperature": 0.0888117717698676
+  },
+  "protocol_weights": {
+    "solu_temp": 0.12089356540818749,
+    "solu_time": 0.23174179092293654,
+    "middle_temp": 0.13663506394370875,
+    "middle_time": 0.0707661406565598,
+    "aging_temp": 0.11075297398042869,
+    "aging_time": 0.13547513729717628,
+    "E_Time": 0.1937353277910025
+  },
+  "protocol_weight_source": "Normalized XGBoost gain from the fitted deployment booster",
+  "MED_normalization": {
+    "leaf_raw_min": 0.09852700490998363,
+    "leaf_raw_max": 0.5230769230769232,
+    "support_log1p_min": 4.780621497198512,
+    "support_log1p_max": 5.378848435376864,
+    "clip": true
+  },
+  "deployment_thresholds": [
+    {
+      "percentile": 40,
+      "MED_threshold": 0.3178072894241818,
+      "PED_threshold": 0.32052096721089296
+    },
+    {
+      "percentile": 45,
+      "MED_threshold": 0.3311673020464705,
+      "PED_threshold": 0.33580906209277295
+    },
+    {
+      "percentile": 50,
+      "MED_threshold": 0.34759333895279004,
+      "PED_threshold": 0.35121610432864847
+    },
+    {
+      "percentile": 55,
+      "MED_threshold": 0.36867552124812675,
+      "PED_threshold": 0.3637096543080231
+    },
+    {
+      "percentile": 60,
+      "MED_threshold": 0.3858833559784235,
+      "PED_threshold": 0.38105280509348316
+    }
+  ],
+  "matched_pairs": {
+    "state_contrast": [
+      "Q1",
+      "Q4"
+    ],
+    "maximum_absolute_prediction_difference": 0.1,
+    "prediction_matched_pairs": 3959,
+    "eligible_representative_pairs": 103,
+    "minimum_normalized_boundary_margin": 0.08,
+    "maximum_normalized_composition_distance": 1.0,
+    "selected_candidates": [
+      "C000254",
+      "C000018"
+    ]
+  }
+}

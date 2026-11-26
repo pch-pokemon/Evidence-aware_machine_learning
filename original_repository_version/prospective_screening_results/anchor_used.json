@@ -1,0 +1,113 @@
+{
+  "selection_independence": "Anchor selected from the 613-record deployment LOO reference without reading prospective-screening outputs.",
+  "selection_rule": {
+    "robust_state_requirement": "Q1 under deployment P40",
+    "source_diversity_requirement": "n_sources >= median n_sources among robust-P40-Q1 references",
+    "local_consistency_requirement": "lgkp_std <= median lgkp_std among robust-P40-Q1 references",
+    "ranking": [
+      "joint_support_depth descending",
+      "n_sources descending",
+      "lgkp_std ascending",
+      "sample_id ascending"
+    ],
+    "joint_support_depth_definition": "min[(MED_P40_threshold-MED)/MED_P40_threshold, (PED_P40_threshold-PED)/PED_P40_threshold]"
+  },
+  "selection_thresholds": {
+    "percentile": 40,
+    "MED_threshold": 0.3178072894241818,
+    "PED_threshold": 0.3202587365478995,
+    "PED_scale": "log1p",
+    "source_diversity_median_cutoff": 3.0,
+    "lgkp_std_median_cutoff": 0.710194357961397
+  },
+  "selected_anchor": {
+    "anchor_rank": 1,
+    "identity": {
+      "sample_id": "s087",
+      "source_key": "10.1007/s11085-019-09934-w",
+      "Ref_source_num": "r021",
+      "Year": 2019,
+      "lgkp": -9.73264167624734
+    },
+    "base_family": "Co-dominant",
+    "balance_element_for_virtual_grid": "x_Co",
+    "evidence": {
+      "MED": 0.1812634728107303,
+      "PED_raw": 0.1419425691680635,
+      "PED_log1p": 0.1327308202740335,
+      "PED_for_threshold": 0.1327308202740335,
+      "n_sources_top10": 3.0,
+      "lgkp_std_top10": 0.5905185856370129,
+      "MED_support_margin_P40": 0.42964343851535947,
+      "PED_support_margin_P40": 0.585551289857844,
+      "joint_support_depth": 0.42964343851535947
+    },
+    "composition_at_percent": {
+      "x_Co": 81.3,
+      "x_Al": 9.7,
+      "x_W": 9.0,
+      "x_Ni": 0.0,
+      "x_Cr": 0.0,
+      "x_Mo": 0.0,
+      "x_Fe": 0.0,
+      "x_Nb": 0.0,
+      "x_C": 0.0,
+      "x_Hf": 0.0,
+      "x_Si": 0.0,
+      "x_Ta": 0.0,
+      "x_Ti": 0.0,
+      "x_Y": 0.0,
+      "x_V": 0.0,
+      "x_B": 0.0,
+      "x_Zr": 0.0,
+      "x_Mn": 0.0,
+      "x_Sc": 0.0,
+      "x_La": 0.0,
+      "x_Re": 0.0
+    },
+    "processing": {
+      "solu_temp": 1300.0,
+      "solu_time": 12.0,
+      "middle_temp": 0.0,
+      "middle_time": 0.0,
+      "aging_temp": 900.0,
+      "aging_time": 200.0,
+      "has_solu": 1,
+      "has_middle": 0,
+      "has_aging": 1
+    },
+    "oxidation_condition": {
+      "Temperature_C": 900.0,
+      "E_Time_h": 100.0
+    }
+  },
+  "prospective_family_definition": {
+    "family": "Co-dominant",
+    "family_rule": "Ni-dominant if x_Ni > x_Co, otherwise Co-dominant",
+    "fixed_background": "All composition variables except x_Al, x_Cr and the dominant Ni/Co balance element are fixed to the selected anchor.",
+    "x_Al_range_from_family_P10_P90": {
+      "raw_p10": 5.032,
+      "raw_p90": 15.0,
+      "grid_min": 5.5,
+      "grid_max": 10.0,
+      "grid_step": 0.5
+    },
+    "x_Cr_range_from_family_P10_P90": {
+      "raw_p10": 0.0,
+      "raw_p90": 15.349600000000063,
+      "grid_min": 0.0,
+      "grid_max": 15.0,
+      "grid_step": 0.5
+    },
+    "range_rule": "Use the central P10-P90 literature composition range of the selected base family; round inward to the configured 0.5 at.% grid."
+  },
+  "evidence_config": {
+    "topk": 10,
+    "lambda_protocol": 0.15,
+    "ht_route_mismatch_penalty": 1.0,
+    "ped_threshold_scale": "log1p",
+    "clip_training_reference_normalization": true
+  },
+  "fixed_weight_file": "models\\fixed_evidence_weights\\final_fixed_evidence_weights.json",
+  "deployment_calibration_file": "models\\xgb_full_data\\evidence_calibration\\deployment_evidence_config.json"
+}

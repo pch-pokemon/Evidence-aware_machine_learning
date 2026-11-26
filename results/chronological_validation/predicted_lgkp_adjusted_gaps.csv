@@ -1,0 +1,3 @@
+﻿stratification,requested_bins_per_group,eligible_strata,retained_records_in_eligible_strata,definition,estimate,CI95_low,CI95_high,valid_draws,min_informative_sources
+prediction_only,4,4,169,min-group-count weighted within-stratum MAE(deficient)-MAE(supported),0.3564089415069633,0.13432042910732284,0.5819045295920728,4992,25
+family+prediction,3,4,132,min-group-count weighted within-stratum MAE(deficient)-MAE(supported),0.3135656887178703,0.08374904106028104,0.5564570701938306,4722,23

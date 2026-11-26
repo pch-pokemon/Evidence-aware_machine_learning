@@ -1,0 +1,5 @@
+﻿method,AURC_on_tested_coverage_range,min_actual_coverage,max_actual_coverage,note
+MED_only,0.5864038436908967,0.20118343195266272,1.0,Descriptive; lower is better; integrate only displayed coverage range
+PED_only,0.7241982806622571,0.20118343195266272,1.0,Descriptive; lower is better; integrate only displayed coverage range
+Joint_MAX,0.6555162531518196,0.20118343195266272,1.0,Descriptive; lower is better; integrate only displayed coverage range
+Prediction_only,0.7386147558628642,0.20118343195266272,1.0,Descriptive; lower is better; integrate only displayed coverage range

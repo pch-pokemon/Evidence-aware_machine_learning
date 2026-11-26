@@ -1,0 +1,37 @@
+﻿field,description,unit,role
+sample_id,Record identifier,identifier,provenance
+source_key,Normalized literature DOI/source key,identifier,provenance
+Year,Publication year in the modeling table,year,provenance
+lgkp,Base-10 logarithm of the parabolic rate constant in g² cm⁻⁴ s⁻¹,log10,target
+solu_temp,Solution treatment temp,°C,model input
+solu_time,Solution treatment time,h,model input
+middle_temp,Intermediate treatment temp,°C,model input
+middle_time,Intermediate treatment time,h,model input
+aging_temp,Aging treatment temp,°C,model input
+aging_time,Aging treatment time,h,model input
+x_Co,Atomic fraction of Co expressed as a percentage,at.%,model input
+x_Al,Atomic fraction of Al expressed as a percentage,at.%,model input
+x_W,Atomic fraction of W expressed as a percentage,at.%,model input
+x_Ni,Atomic fraction of Ni expressed as a percentage,at.%,model input
+x_Cr,Atomic fraction of Cr expressed as a percentage,at.%,model input
+x_Mo,Atomic fraction of Mo expressed as a percentage,at.%,model input
+x_Fe,Atomic fraction of Fe expressed as a percentage,at.%,model input
+x_Nb,Atomic fraction of Nb expressed as a percentage,at.%,model input
+x_C,Atomic fraction of C expressed as a percentage,at.%,model input
+x_Hf,Atomic fraction of Hf expressed as a percentage,at.%,model input
+x_Si,Atomic fraction of Si expressed as a percentage,at.%,model input
+x_Ta,Atomic fraction of Ta expressed as a percentage,at.%,model input
+x_Ti,Atomic fraction of Ti expressed as a percentage,at.%,model input
+x_Y,Atomic fraction of Y expressed as a percentage,at.%,model input
+x_V,Atomic fraction of V expressed as a percentage,at.%,model input
+x_B,Atomic fraction of B expressed as a percentage,at.%,model input
+x_Zr,Atomic fraction of Zr expressed as a percentage,at.%,model input
+x_Mn,Atomic fraction of Mn expressed as a percentage,at.%,model input
+x_Sc,Atomic fraction of Sc expressed as a percentage,at.%,model input
+x_La,Atomic fraction of La expressed as a percentage,at.%,model input
+x_Re,Atomic fraction of Re expressed as a percentage,at.%,model input
+Temperature,Oxidation temperature,°C,model input
+E_Time,Oxidation exposure duration,h,model input
+has_solu,Presence flag for the solu heat-treatment stage,0/1,model input
+has_middle,Presence flag for the middle heat-treatment stage,0/1,model input
+has_aging,Presence flag for the aging heat-treatment stage,0/1,model input
