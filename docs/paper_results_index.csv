@@ -1,6 +1,6 @@
 manuscript_item,released_data,script,scope
 Fig. 1,,,Manuscript schematic
-Fig. 2(a),,,Original plotted record list and documented window require author reconciliation
+Fig. 2(a),,,Original record lists and the defined window are to be verified by the authors.
 Fig. 2(b),results/nested_cv/Table_1.csv,,Nested per-fold comparison
 Fig. 3(a¨Cb),results/nested_cv/pooled_oof_metrics.json,code/nested_cv/compute_oof_evidence.py,Aggregate values are released; individual plotted targets and residuals require controlled inputs
 Fig. 3(c),results/nested_cv/source/OOF_evidence.csv,code/verify_published_evidence.py,Evidence coordinates are released; individual error coloring requires controlled inputs
