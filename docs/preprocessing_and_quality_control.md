@@ -12,7 +12,9 @@ The ordered outer fold files are reconstructed from published sample IDs, rather
 
 ## Kinetic curation and fitting metadata
 
-The manuscript describes domain review of the literature curves and separate fitting of a parabolic regime. Any reanalysis of the curve-selection procedure needs the author's original records and fit windows. The controlled preprocessing code starts from curated modeling inputs. Additional details on the provisional fit-metadata results are in the fitting-metadata folder.
+The manuscript describes domain review of the literature curves and separate fitting of a parabolic regime. Any reanalysis of the curve-selection procedure needs the author's original records and fit windows. The controlled preprocessing code starts from curated modeling inputs.
+
+The fitting-quality sensitivity analysis uses the curated fitting metadata associated with the final modeling records. Subset definitions, numerical results, and source-cluster bootstrap estimates are provided in the fitting-metadata folder.
 
 The reported year and the date used for the independent chronological cutoff are separate fields. The latter follows the publication convention and explicit online-date overrides in the chronological source manifest. The within-fold historical-to-current experiment uses its own publication-year restriction as specified in the manuscript.
 
