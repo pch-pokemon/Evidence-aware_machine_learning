@@ -73,6 +73,24 @@ def verify_nested_states(records):
     return pd.DataFrame(rows)
 
 
+def verify_table_2():
+    nested = RESULTS / "nested_cv"
+    sensitivity = read_csv(nested / "threshold_sensitivity_quadrant_stats.csv")
+    columns = ["count", "MAE", "std_abs_error", "max_abs_error", "fraction", "RMSE"]
+    p50 = sensitivity.loc[sensitivity.percentile.eq(50)].set_index("quadrant").loc[STATES, columns]
+
+    bootstrap = read_csv(RESULTS / "sensitivity_and_ablation/bootstrap_source_cluster_CI.csv")
+    mae_intervals = bootstrap.loc[bootstrap.scenario.eq("training_LOO_P50")].set_index("metric")
+    intervals = mae_intervals.loc[[f"MAE_{state}" for state in STATES], ["ci95_low", "ci95_high"]]
+    intervals.index = p50.index
+    table = p50.join(intervals, validate="one_to_one").reset_index()
+
+    pd.testing.assert_frame_equal(
+        table, read_csv(nested / "Table_2.csv"), check_dtype=False, rtol=0, atol=1e-13
+    )
+    return table
+
+
 def verify_temporal():
     root = RESULTS / "temporal_evolution"
     data = read_csv(root / "record_state_transitions.csv")
@@ -151,6 +169,7 @@ def verify_prospective():
 def reproduce(output_dir=None):
     records = verify_provenance()
     nested = verify_nested_states(records)
+    table_2 = verify_table_2()
     temporal = verify_temporal()
     verify_chronological(records)
     neighbor_rows = verify_neighbor_profiles(records)
@@ -160,6 +179,7 @@ def reproduce(output_dir=None):
         if output_dir.is_relative_to(PACKAGE):
             raise ValueError("Use a separate directory for generated results.")
         output_dir.mkdir(parents=True, exist_ok=True)
+        tables["Table_2.csv"] = table_2
         tables["nested_threshold_state_counts.csv"] = nested
         tables["temporal_transition_matrix.csv"] = temporal
         for name, table in tables.items():

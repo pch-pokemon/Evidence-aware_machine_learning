@@ -14,7 +14,7 @@ Fig. 6(b),results/prospective_screening/Fig_6/Fig_6b_predicted_lgkp_map.csv,code
 Fig. 6(c),results/prospective_screening/Fig_6/Fig_6c_matched_pairs.csv,code/figures/plot_prospective_screening.py,Threshold annotations: results/prospective_screening/Fig_6/Fig_6c_tolerances.csv
 Fig. 6(d),results/prospective_screening/Fig_6/Fig_6d_representative_pair.csv,code/figures/plot_prospective_screening.py,Representative pair with signed P50 margins
 Table 1,results/nested_cv/Table_1.csv,code/nested_cv/train_source_aware_xgboost.py,Random and source-aware per-fold metrics
-Table 2,results/nested_cv/Table_2.csv,code/sensitivity_and_ablation/evaluate_med_calibration.py,Sample SD of absolute error; source-cluster bootstrap CIs
+Table 2,results/nested_cv/Table_2.csv,code/verify_published_evidence.py,Population SD of absolute error from Table S4 at P50 and source-cluster bootstrap CIs
 Table 3,results/prospective_screening/Table_3.csv,code/verify_published_evidence.py,Mean signed differences from the deployment P50 thresholds
 Fig. S1,results/dataset/Fig_S1_yearly_statistics.csv,,Yearly counts from the provenance manifest
 Fig. S2,results/temporal_evolution/temporal_fold_metrics.csv,code/temporal_evolution/fit_historical_fold_models.py,Fold metrics are released; plotted measured targets require controlled inputs
